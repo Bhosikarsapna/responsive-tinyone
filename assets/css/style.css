@@ -1,0 +1,268 @@
+:root {
+    --color-pri: #fcdb00;
+    --color-sec: #010101;
+    --color-dark: #000;
+    --color-white: #fff;
+    --color-gray-1: #313841;
+    --color-gray-2: #555555;
+    --color-gray-3: #898989;
+  }
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /*helping class*/
+  
+  .section {
+    /* padding: 100px;  */
+    padding: 10rem 0px;
+  }
+  
+  /*OR  1rem >> 16px >> 10px*/
+  
+  /*header css*/
+  
+  .header {
+    background-color: var(--color-pri);
+  }
+  
+  .navbar-brand {
+    padding: 4px 1.5rem;
+  }
+  
+  .header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 7rem;
+  }
+  
+  .header .navbar-default .navbar-nav > li > a {
+    color: #010101;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .header .navbar-default .navbar-nav > li > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #010101;
+    /* background: linear-gradient(black, purple, white); */
+    width: 0;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .header .navbar-default .navbar-nav > li > a:hover::before {
+    width: 100%;
+  }
+  
+  .inspiration {
+    margin-top: 7.2rem;
+  }
+  
+  .pri-heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--color-sec);
+    margin-bottom: 2.2rem;
+  }
+  
+  .sec-heading {
+    font-size: 2rem;
+    font-weight: regular;
+    color: var(--color-gray-1);
+    margin-bottom: 2.2rem;
+  }
+  
+  .para {
+    font-size: 1.6rem;
+    font-weight: regular;
+    color: var(--color-gray-2);
+    margin-bottom: 4rem;
+  }
+  
+  .header .social-icons a {
+    margin-right: 3.5rem;
+    color: var(--color-sec);
+  }
+  
+  /* img {
+      width: 100%;
+  }
+  ..........................................................header or section end.................................................................. */
+  
+  .features {
+    margin-bottom: 10px;
+  }
+  
+  .heading-wrap {
+    padding: 0px 3.5rem;
+    margin-bottom: 9rem;
+  }
+  
+  .featureThumb {
+    margin-bottom: 9rem;
+  }
+  
+  .featureThumb h3 {
+    color: var(--color-sec);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .featureThumb p {
+    color: var(--color-gray-3);
+    font-size: 1.6rem;
+    /* margin-bottom: 9.0rem; */
+  }
+  
+  /*........................................................feature section end........................................................................*/
+  
+  .contact {
+    background-color: var(--color-sec);
+  }
+  
+  .contact .pri-heading {
+    color: #fcdb00;
+    font-size: 3.2rem;
+    font-weight: regular;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact .sec-heading {
+    color: var(--color-gray-3);
+    font-size: 2.2rem;
+    font-weight: regular;
+    margin-bottom: 4rem;
+  }
+  
+  .signUpEmail,
+  .intouchBtn {
+    height: 5rem;
+  }
+  
+  .intouchBtn {
+    color: var(--color-sec);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--color-pri);
+    border: 1px solid var(--color-pri);
+    transition: all 0.7s ease-in-out;
+    /* height: 5.0rem; */
+  }
+  
+  .intouchBtn:hover .intouchBtn:focus .intouchBtn:active {
+    background-color: var(--color-sec);
+    color: var(--color-pri);
+  }
+  
+  .signUpEmail::placeholder {
+    color: var(--color-gray-3);
+    font-size: 16px;
+  }
+  
+  .signUpForm {
+    margin-bottom: 8rem;
+  }
+  
+  .contact,
+  .social-icons a {
+    color: var(--color-pri);
+    margin-right: 2rem;
+  }
+  
+  .contact,
+  .social-icons li:last-child {
+    margin-right: 0px;
+  }
+  
+  .contactM {
+    margin-bottom: 12.5rem;
+  }
+  
+  .footerLinks li,
+  .footerLinks a {
+    color: var(--color-white);
+    font-size: 16px;
+  }
+  
+  @media all and (max-width: 768px) {
+    .section {
+      padding: 4rem 0;
+    }
+    .header,
+    .navbar-default,
+    .featureThumb {
+      padding: 2rem;
+    }
+  
+    .contact,
+    .signUpEmail {
+      margin-bottom: 2rem;
+    }
+  
+    .inspiration {
+      margin-top: 0;
+      margin-bottom: 6rem;
+    }
+    .contactM,
+    .signUpForm {
+      margin-bottom: 2rem;
+    }
+  
+    .featureThumb {
+      margin-bottom: 0;
+    }
+  
+    .heading-wrap {
+      margin-bottom: 0px;
+    }
+  
+    .ipad {
+      width: 100%;
+    }
+  
+    .contact .social-icons i {
+      font-size: 35px;
+    }
+  
+    .social-icons a {
+      margin-right: 0px;
+    }
+  
+    .featureThumb p {
+      margin-bottom: 2rem;
+    }
+  
+    .header,
+    .social-icons {
+      font-size: 35px;
+    }
+  
+    .header,
+    .navbar-default .navbar-toggle {
+      border-color: var(--color-sec);
+    }
+  
+    .header .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+      background-color: transparent;
+    }
+  
+    .header .navbar-default .navbar-toggle .icon-bar {
+      background-color: var(--color-sec);
+    }
+  }
+  
